@@ -1,21 +1,23 @@
 #include <Servo.h>
 
-#define basePin 1;
-#define updownPin 2;
-#define grabdropPin 3;
+#define basePin 8
+#define updownPin 2
+#define estampPin 3
 
 Servo baseServo;
 Servo updownServo;
-Servo grabdropServo;
+Servo estampServo;
 
 void setup() {
-  // put your setup code here, to run once:
+  // Servos
   baseServo.attach(basePin);
-  updownServo.attach(updownPin);
-  grabdropPin.attach(grabdropPin);  
+  //updownServo.attach(updownPin);
+  //estamp.attach(estampPin);
+
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  baseServo.write(180);
 }
